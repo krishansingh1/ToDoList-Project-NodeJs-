@@ -10,10 +10,10 @@
     <h1>TODO App</h1>
     <hr />
     <form action="">
-      <label for="des">DESCRIPTION</label><br />
-      <input type="text" id="des" name="Description" /><br />
-      <label for="">Category</label><br />
-      <select name="" id="">
+      <label for="des">DESCRIPTION</label>
+      <input type="text" id="des" name="Description" />
+      <label for="dropdown">CATEGORY</label>
+      <select name="Category" id="dropdown">
         <option value="default">Choose a category</option>
         <option value="Personal">Personal</option>
         <option value="work">Work</option>
@@ -21,6 +21,10 @@
         <option value="">Cleaning</option>
         <option value="">Other</option>
       </select>
+      <label for="date">DUE DATE</label>
+      <input type="date" name="Date" id="date" />
+      <button type="Add Task">ADD TASK</button>
+      <button type="Delete">DELETE TASKS</button>
     </form>
   </body>
 </html>
