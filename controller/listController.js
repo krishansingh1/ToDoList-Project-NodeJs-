@@ -1,3 +1,3 @@
-module.exports.list = function (res, req) {
+module.exports.list = function (req, res) {
   return res.end("<h1>ToDo App</h1>");
 };
