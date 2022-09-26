@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
+    <title><%=title%></title>
   </head>
   <body>
     <h1>TODO App</h1>
     <hr />
-    <p>DESCRIPTION</p>
+    <form action="">
+      <label for="des">DESCRIPTION</label><br />
+      <input type="text" id="des" name="Description" /><br />
+      <label for="">Category</label><br />
+      <select name="" id="">
+        <option value="default">Choose a category</option>
+        <option value="Personal">Personal</option>
+        <option value="work">Work</option>
+        <option value="">School</option>
+        <option value="">Cleaning</option>
+        <option value="">Other</option>
+      </select>
+    </form>
   </body>
 </html>

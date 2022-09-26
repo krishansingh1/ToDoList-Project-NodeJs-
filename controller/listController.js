@@ -1,3 +1,5 @@
 module.exports.list = function (req, res) {
-  return res.end("<h1>ToDo App</h1>");
+  return res.render("list", {
+    title: "TODO App",
+  });
 };
