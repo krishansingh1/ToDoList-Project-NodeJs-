@@ -8,26 +8,40 @@
     <title><%=title%></title>
   </head>
   <body>
-    <h1>TODO App</h1>
-    <hr />
-    <form action="">
-      <label for="des">DESCRIPTION</label>
-      <input type="text" id="des" name="Description" />
-      <label for="dropdown">CATEGORY</label>
-      <select name="Category" id="dropdown">
-        <option value="default">Choose a category</option>
-        <option value="Personal">Personal</option>
-        <option value="work">Work</option>
-        <option value="">School</option>
-        <option value="">Cleaning</option>
-        <option value="">Other</option>
-      </select>
-      <label for="date">DUE DATE</label>
-      <input type="date" name="Date" id="date" />
-      <button type="Add Task">ADD TASK</button>
-      <button type="Delete">DELETE TASKS</button>
-    </form>
-
+    <div id="list_container">
+      <h1 id="list_heading">TODO App</h1>
+      <hr />
+      <form action="">
+        <label for="des">DESCRIPTION</label><br />
+        <input
+          type="text"
+          id="des"
+          name="Description"
+          placeholder="What do you need to do?"
+        />
+        <div id="list_categories_date">
+          <div>
+            <label for="dropdown">CATEGORY</label><br />
+            <select name="Category" id="dropdown">
+              <option value="default">Choose a category</option>
+              <option value="Personal">Personal</option>
+              <option value="work">Work</option>
+              <option value="">School</option>
+              <option value="">Cleaning</option>
+              <option value="">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="date">DUE DATE</label><br />
+            <input type="date" name="Date" id="date" />
+            <div>
+              <button type="Add Task">ADD TASK</button>
+              <button type="Delete">DELETE TASKS</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
     <script type="text/javascript" src="/js/script.js"></script>
   </body>
 </html>
