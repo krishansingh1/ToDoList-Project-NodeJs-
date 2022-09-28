@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -31,12 +31,41 @@ body {
 
 #list_description {
   margin-left: 1.5rem;
-  padding-top: 10px;
+  padding-top: 2px;
   padding-bottom: 1.3rem;
+}
+
+#list_description:hover {
+  background-color: darkgray;
 }
 
 #list_description label {
   font-size: 0.8rem;
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
+}
+
+#list_description input[type="text"] {
+  border: none;
+  width: 100%;
+  color: gray;
+}
+
+#list_description input:focus {
+  outline: none;
+  color: gray;
+}
+
+#list_description input::placeholder {
+  color: lightgray;
+}
+
+#list_categories_date {
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+#list_categories {
+  position: relative;
+  left: -14.5rem;
 }
