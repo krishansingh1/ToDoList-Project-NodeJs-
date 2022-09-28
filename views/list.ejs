@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a429e5bfb6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <title><%=title%></title>
   </head>
   <body>
@@ -34,12 +38,15 @@
               <option value="">Other</option>
             </select>
           </div>
+          <span id="split_line"></span>
           <div id="list_date">
             <label for="date">DUE DATE</label><br />
             <input type="date" name="Date" id="date" />
           </div>
         </div>
-        <div>
+        <hr />
+        <div id="list_buttons">
+          <i class="fa-solid fa-plus"></i>
           <button type="Add Task">ADD TASK</button>
           <button type="Delete">DELETE TASKS</button>
         </div>
