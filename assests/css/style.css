@@ -67,7 +67,7 @@ body {
 
 #list_categories {
   position: relative;
-  left: -9rem;
+  left: -3.7rem;
   /* margin-bottom: 0.8rem; */
 }
 
@@ -78,9 +78,10 @@ body {
 
 #split_line {
   position: relative;
-  left: -7rem;
+  left: -1.5rem;
   top: -1.5px;
   height: 4rem;
+  /* margin-left: 5rem; */
   border-right: 1px solid gray;
 }
 
@@ -102,7 +103,8 @@ select:focus {
 
 #list_date {
   position: relative;
-  left: -6rem;
+  /* left: -6rem; */
+  /* marg */
 }
 
 #list_date label {
@@ -112,6 +114,7 @@ select:focus {
 
 #list_date input[type="date"] {
   border: none;
+  width: 300px;
 }
 
 #list_buttons {
