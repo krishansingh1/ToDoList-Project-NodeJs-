@@ -157,4 +157,7 @@ i {
 
 #list_content {
   display: flex;
+  margin-top: 1.5rem;
+  border-top: 1px solid gray;
+  padding-top: 0.5rem;
 }
