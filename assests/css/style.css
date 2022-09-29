@@ -159,8 +159,39 @@ i {
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
+  margin-left: 1rem;
   border-top: 1px solid gray;
+  width: 48rem;
   padding: 0.5rem 1rem;
 }
 
+#list_content_date {
+  position: relative;
+  left: -17rem;
+  top: 0.7rem;
+}
 
+#list_content_date p:nth-child(1) {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#list_content_date i {
+  color: darkgray;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+#list_content_date span:nth-child(3) {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: darkgray;
+  position: relative;
+  left: -0.8rem;
+  top: 2px;
+}
+
+#list_content_category{
+  border: 1px solid red;
+  
+}
