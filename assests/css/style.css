@@ -116,17 +116,35 @@ select:focus {
   margin-top: 2rem;
 }
 
-#list_buttons i{
+i {
+  position: relative;
   color: #ffffff;
-  border: 1px solid red; 
+  left: -1rem;
+  top: 2px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#list_buttons button:nth-child(1) {
+  position: relative;
+  left: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 #list_buttons button:nth-child(2) {
   position: relative;
-  left: -1.5rem;
-  background-color: #000000;
+  left: 5px;
+  background-color: orangered;
   color: #ffffff;
-  padding: 15px 40px;
+  padding: 12px 30px;
   border: none;
+  font-size: 1rem;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
