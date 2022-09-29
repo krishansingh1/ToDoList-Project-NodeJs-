@@ -116,11 +116,16 @@ select:focus {
   margin-top: 2rem;
 }
 
-#list_buttons button{
+#list_buttons i{
+  color: #ffffff;
+  border: 1px solid red; 
+}
+
+#list_buttons button:nth-child(2) {
   position: relative;
   left: -1.5rem;
   background-color: #000000;
-  color: #ffffff; 
+  color: #ffffff;
   padding: 15px 40px;
   border: none;
   border-radius: 0.2rem;
