@@ -155,6 +155,10 @@ i {
   cursor: pointer;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #list_content {
   display: flex;
   justify-content: space-between;
