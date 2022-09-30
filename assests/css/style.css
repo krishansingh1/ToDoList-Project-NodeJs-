@@ -155,7 +155,7 @@ i {
   cursor: pointer;
 }
 
-ul {
+ul li{
   list-style-type: none;
 }
 
