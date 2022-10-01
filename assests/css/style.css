@@ -204,6 +204,6 @@ ul li {
   margin-top: 0.5rem;
 }
 
-input[type="checkbox"]:checked + p.lineThrough {
+input[type="checkbox"]:checked + #list_content_date .lineThrough {
   text-decoration: line-through;
 }
