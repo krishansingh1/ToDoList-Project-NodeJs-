@@ -50,22 +50,26 @@
           <button type="Add Task">
             <i class="fa-solid fa-plus"></i>ADD TASK
           </button>
-          <button type="Delete">
-            <i class="fa-solid fa-trash-can"></i>DELETE TASKS
-          </button>
+          <a href="/delete-list/?id=<%= item._id%>"
+            ><button type="Delete">
+              <i class="fa-solid fa-trash-can"></i>DELETE TASKS
+            </button>
+          </a>
         </div>
       </form>
 
       <ul>
+        <%for(let item of List){%>
         <li id="list_content">
           <input type="checkbox" name="checked" id="checked" />
           <div id="list_content_date">
-            <p class="lineThrough">Why not add a task?</p>
+            <p class="lineThrough"><%=item.description%></p>
             <span><i class="fa-solid fa-calendar-days"></i></span>
-            <span class="lineThrough">May 2, 2019</span>
+            <span class="lineThrough"><%=item.date%></span>
           </div>
-          <span id="list_content_category">WORK</span>
+          <span id="list_content_category"><%=item.category%></span>
         </li>
+        <%}%>
       </ul>
     </div>
     <script type="text/javascript" src="/js/script.js"></script>
