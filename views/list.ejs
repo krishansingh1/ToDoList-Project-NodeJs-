@@ -15,7 +15,7 @@
     <div id="list_container">
       <h1 id="list_heading">TODO App</h1>
       <hr />
-      <form action="">
+      <form action="/create-list" method="POST">
         <div id="list_description">
           <label for="des">DESCRIPTION</label><br />
           <input
@@ -23,6 +23,7 @@
             id="des"
             name="Description"
             placeholder="What do you need to do?"
+            required
           />
         </div>
         <hr />
@@ -41,7 +42,7 @@
           <span id="split_line"></span>
           <div id="list_date">
             <label for="date">DUE DATE</label><br />
-            <input type="date" name="Date" id="date" />
+            <input type="date" name="Date" id="date" required />
           </div>
         </div>
         <hr />
@@ -60,8 +61,7 @@
           <input type="checkbox" name="checked" id="checked" />
           <div id="list_content_date">
             <p class="lineThrough">Why not add a task?</p>
-            <span><i class="fa-solid fa-calendar-days"></i
-            ></span>
+            <span><i class="fa-solid fa-calendar-days"></i></span>
             <span class="lineThrough">May 2, 2019</span>
           </div>
           <span id="list_content_category">WORK</span>
