@@ -24,6 +24,7 @@ app.get("/", function (req, res) {
 
 app.post("/create-list", function (req, res) {
   list.push({
+    id: req.body.id,
     description: req.body.description,
     date: req.body.date,
     category: req.body.category,
@@ -33,7 +34,6 @@ app.post("/create-list", function (req, res) {
 });
 
 app.get("/delete-list", function (req, res) {
-  
   return res.redirect("/");
 });
 

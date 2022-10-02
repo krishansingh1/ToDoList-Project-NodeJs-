@@ -35,6 +35,10 @@ body {
   padding-bottom: 1.3rem;
 }
 
+#list_id {
+  margin-left: -14px;
+  width: 20px;
+}
 /* #list_description:hover {
   background-color: darkgray;
 } */
