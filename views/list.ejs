@@ -50,9 +50,11 @@
           <button type="submit">
             <i class="fa-solid fa-plus"></i>ADD TASK
           </button>
-          <button type="Delete">
-            <i class="fa-solid fa-trash-can"></i>DELETE TASKS
-          </button>
+          <a href="/delete-list/?id=<%= item._id%>">
+            <button type="Delete">
+              <i class="fa-solid fa-trash-can"></i>DELETE TASKS
+            </button>
+          </a>
         </div>
       </form>
 
