@@ -33,7 +33,7 @@ app.post("/create-list", function (req, res) {
 });
 
 app.get("/delete-list", function (req, res) {
-  console.log(req.query.description);
+  
 
   return res.redirect("/");
 });
