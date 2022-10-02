@@ -21,7 +21,7 @@
           <input
             type="text"
             id="des"
-            name="Description"
+            name="description"
             placeholder="What do you need to do?"
             required
           />
@@ -30,7 +30,7 @@
         <div id="list_categories_date">
           <div id="list_categories">
             <label for="dropdown">CATEGORY</label><br />
-            <select name="Category" id="dropdown" class=".select">
+            <select name="category" id="dropdown" class=".select">
               <option value="default">Choose a category</option>
               <option value="Personal">Personal</option>
               <option value="Work">Work</option>
@@ -42,19 +42,17 @@
           <span id="split_line"></span>
           <div id="list_date">
             <label for="date">DUE DATE</label><br />
-            <input type="date" name="Date" id="date" required />
+            <input type="date" name="date" id="date" required />
           </div>
         </div>
         <hr />
         <div id="list_buttons">
-          <button type="Add Task">
+          <button type="submit">
             <i class="fa-solid fa-plus"></i>ADD TASK
           </button>
-          <a href="/delete-list/?id=<%= item._id%>"
-            ><button type="Delete">
-              <i class="fa-solid fa-trash-can"></i>DELETE TASKS
-            </button>
-          </a>
+          <button type="Delete">
+            <i class="fa-solid fa-trash-can"></i>DELETE TASKS
+          </button>
         </div>
       </form>
 

@@ -1,19 +1,17 @@
-const { application } = require("express");
 const express = require("express");
 const app = express();
 const port = 8000;
 const bodyParser = require("body-parser");
 
 //Use express router
-app.use("/", require("./routes"));
-
-app.use(express.static("assests"));
 
 app.set("view engine", "ejs");
 
 app.set("views", "./views");
 
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.static("assests"));
 
 const list = [
   {
@@ -29,9 +27,17 @@ const list = [
 ];
 
 app.get("/", function (req, res) {
-  return res.render({
+  return res.render("list", {
     todolist: list,
     title: "ToDoList",
+  });
+});
+
+app.post("/create-list", function (req, res) {
+  list.push({
+    description: req.body.description,
+    date: req.body.date,
+    category: req.body.category,
   });
 });
 
