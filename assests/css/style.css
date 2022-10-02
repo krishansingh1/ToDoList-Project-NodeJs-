@@ -143,6 +143,10 @@ i {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 #list_delete2 {
   position: relative;
   left: 5px;
