@@ -32,6 +32,10 @@ app.post("/create-list", function (req, res) {
   return res.redirect("/");
 });
 
+app.get("/delete-list", function (req, res) {
+  console.log(req.query);
+});
+
 app.listen(port, (err) => {
   if (err) {
     console.log(`Error: ${err}`);
