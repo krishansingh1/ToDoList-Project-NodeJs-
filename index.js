@@ -28,7 +28,12 @@ const list = [
   },
 ];
 
-app.get("/", function (req, res) {});
+app.get("/", function (req, res) {
+  return res.render({
+    todolist: list,
+    title: "ToDoList",
+  });
+});
 
 app.listen(port, (err) => {
   if (err) {
