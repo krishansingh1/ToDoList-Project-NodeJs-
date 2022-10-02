@@ -131,7 +131,7 @@ i {
   font-weight: bold;
 }
 
-#list_buttons button:nth-child(1) {
+#list_delete1 {
   position: relative;
   left: 5px;
   background-color: #000000;
@@ -143,7 +143,7 @@ i {
   cursor: pointer;
 }
 
-#list_delete {
+#list_delete2 {
   position: relative;
   left: 5px;
   background-color: orangered;
