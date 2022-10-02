@@ -13,18 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static("assests"));
 
-const list = [
-  {
-    description: "Why not add a task?",
-    date: "13/02/2022",
-    category: "Work",
-  },
-  {
-    description: "BreakFast",
-    date: "29/06/2022",
-    category: "Personal",
-  },
-];
+const list = [];
 
 app.get("/", function (req, res) {
   return res.render("list", {
@@ -39,6 +28,8 @@ app.post("/create-list", function (req, res) {
     date: req.body.date,
     category: req.body.category,
   });
+
+  return res.redirect("/");
 });
 
 app.listen(port, (err) => {
