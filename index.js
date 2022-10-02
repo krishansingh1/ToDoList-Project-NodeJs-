@@ -15,6 +15,19 @@ app.set("views", "./views");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+const list = [
+  {
+    description: "Why not add a task?",
+    date: "13/02/2022",
+    category: "Work",
+  },
+  {
+    description: "BreakFast",
+    date: "29/06/2022",
+    category: "Personal",
+  },
+];
+
 app.get("/", function (req, res) {});
 
 app.listen(port, (err) => {
