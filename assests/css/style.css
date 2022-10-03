@@ -35,14 +35,31 @@ body {
   padding-bottom: 1.3rem;
 }
 
-#list_id {
-  margin-left: -14px;
-  width: 20px;
+#list_number {
+  margin-left: 1.5rem;
+  padding-top: 2px;
+  padding-bottom: 1.3rem;
 }
 
-/* #list_description:hover {
-  background-color: darkgray;
-} */
+#list_number label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#list_number input[type="number"] {
+  border: none;
+  width: 100%;
+  color: gray;
+}
+
+#list_number input:focus {
+  outline: none;
+  color: gray;
+}
+
+#list_number input::placeholder {
+  color: lightgray;
+}
 
 #list_description label {
   font-size: 0.8rem;
