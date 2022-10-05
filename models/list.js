@@ -9,7 +9,11 @@ const listSchema = new mongoose.Schema({
     type: String,
   },
   date: {
-    type: String,
+    type: Date,
     required: true,
   },
 });
+
+const List = mongoose.model("List", listSchema);
+
+module.exports = List;
