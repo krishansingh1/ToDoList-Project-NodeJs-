@@ -15,27 +15,47 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static("assests"));
 
-const list = [];
-
 app.get("/", function (req, res) {
-  return res.render("list", {
-    todolist: list,
-    title: "ToDoList",
+  List.find({}, (err, lists) => {
+    if (err) {
+      console.log("Error occured while finding the contacts in db");
+      return;
+    }
+    return res.render("list", {
+      todolist: lists,
+      title: "ToDoList",
+    });
   });
 });
 
 app.post("/create-list", function (req, res) {
-  list.push({
-    id: req.body.id,
-    description: req.body.description,
-    date: req.body.date,
-    category: req.body.category,
-  });
+  // list.push({
+  //   id: req.body.id,
+  //   description: req.body.description,
+  //   date: req.body.date,
+  //   category: req.body.category,
+  // });
 
-  return res.redirect("/");
+  List.create(
+    {
+      description: req.body.description,
+      date: req.body.date,
+      category: req.body.category,
+    },
+    (err, newList) => {
+      if (err) {
+        console.log("Error in creating a contact");
+        return;
+      }
+      console.log("********", newList);
+      return res.redirect("/");
+    }
+  );
 });
 
 app.get("/delete-list", function (req, res) {
+  console.log(req.query);
+  // let id = req.query.id;
   return res.redirect("/");
 });
 
