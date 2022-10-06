@@ -50,18 +50,17 @@
           <button type="submit" id="list_delete1">
             <i class="fa-solid fa-plus"></i>ADD TASK
           </button>
-          <a href="/delete-list/">
-            <span type="delete" id="list_delete2">
-              <i class="fa-solid fa-trash-can"></i>DELETE TASKS
-            </span>
-          </a>
+          <form action="/delete-list/">
+            <button type="submit" id="list_delete2"><i class="fa-solid fa-trash-can"></i> DELETE TASKS</button>
+          </form>
+          </form>
         </div>
       </form>
 
       <ul>
         <%for(let item of todolist){%>
         <li id="list_content">
-          <input type="checkbox" name="checked" id="checked" />
+          <input type="checkbox" name="checked" id="<%=item.id%>" />
           <div id="list_content_date">
             <p class="lineThrough"><%=item.description%></p>
             <span><i class="fa-solid fa-calendar-days"></i></span>
