@@ -115,7 +115,7 @@ select:focus {
 
 #list_buttons {
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 i {
@@ -162,29 +162,30 @@ ul li {
 #list_content {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   margin-left: 1rem;
   border-top: 1px solid gray;
   width: 48rem;
   padding: 0.5rem 1rem;
 }
 
-#list_content_date {
-
+#list_content_imp {
+  position: relative;
+  left: 2rem;
+  top: -1.5rem;
 }
-
-#list_content_date p:nth-child(2) {
+#list_content_imp p:nth-child(1) {
   font-size: 0.8rem;
   font-weight: bold;
 }
 
-#list_content_date i {
+#list_content_imp i {
   color: darkgray;
   margin-left: 1rem;
   font-size: 0.9rem;
 }
 
-#list_content_date span:nth-child(4) {
+#list_content_imp span:nth-child(3) {
   font-size: 0.7rem;
   font-weight: bold;
   color: darkgray;
@@ -195,13 +196,13 @@ ul li {
 
 #list_content_category {
   border: 1px solid;
-  padding: 1% 3.5%;
+  padding: 0.5% 3.5%;
   border-radius: 0.2rem;
   background-color: yellowgreen;
   color: #ffffff;
   margin-top: 0.5rem;
 }
 
-input[type="checkbox"]:checked + #list_content_date .lineThrough {
+input[type="checkbox"]:checked + #list_content_imp {
   text-decoration: line-through;
 }

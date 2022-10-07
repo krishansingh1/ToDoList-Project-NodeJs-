@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/a429e5bfb6.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <title><%=title%></title>
-  </head>
-  <body>
-    <div id="list_container">
-      <h1 id="list_heading">TODO App</h1>
-      <hr />
-      <form action="/create-list" method="POST">
-        <div id="list_description">
-          <label for="des">DESCRIPTION</label><br />
-          <input
-            type="text"
-            id="des"
-            name="description"
-            placeholder="What do you need to do?"
-            required
-          />
-        </div>
-        <hr />
-        <div id="list_categories_date">
-          <div id="list_categories">
-            <label for="dropdown">CATEGORY</label><br />
-            <select name="category" id="dropdown" class=".select">
-              <option value="default">Choose a category</option>
-              <option value="Personal">Personal</option>
-              <option value="Work">Work</option>
-              <option value="School">School</option>
-              <option value="Cleaning">Cleaning</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <span id="split_line"></span>
-          <div id="list_date">
-            <label for="date">DUE DATE</label><br />
-            <input type="date" name="date" id="date" required />
-          </div>
-        </div>
-        <hr />
-        <div id="list_buttons">
-          <button type="submit" id="list_delete1">
-            <i class="fa-solid fa-plus"></i>ADD TASK
-          </button>
-          <form action="/delete-list/" method="get">
-            <button type="submit" id="list_delete2"><i class="fa-solid fa-trash-can"></i> DELETE TASKS</button>
-          </form>
-          </form>
-        </div>
-      </form>
 
-      <ul>
-        <%for(let item of todolist){%>
-        <li id="list_content">
-          <div id="list_content_date">
-            <input type="checkbox" name="checked" id="<%=item._id%>" />
-            <p class="lineThrough"><%=item.description%></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a429e5bfb6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <title>
+    <%=title%>
+  </title>
+</head>
+
+<body>
+  <div id="list_container">
+    <h1 id="list_heading">TODO App</h1>
+    <hr />
+    <form action="/create-list" method="POST">
+      <div id="list_description">
+        <label for="des">DESCRIPTION</label><br />
+        <input type="text" id="des" name="description" placeholder="What do you need to do?" required />
+      </div>
+      <hr />
+      <div id="list_categories_date">
+        <div id="list_categories">
+          <label for="dropdown">CATEGORY</label><br />
+          <select name="category" id="dropdown" class=".select">
+            <option value="default">Choose a category</option>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+            <option value="Cleaning">Cleaning</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <span id="split_line"></span>
+        <div id="list_date">
+          <label for="date">DUE DATE</label><br />
+          <input type="date" name="date" id="date" required />
+        </div>
+      </div>
+      <hr />
+      <div id="list_buttons">
+        <button type="submit" id="list_delete1">
+          <i class="fa-solid fa-plus"></i>ADD TASK
+        </button>
+        <form action="/delete-list/" method="get">
+          <button type="submit" id="list_delete2"><i class="fa-solid fa-trash-can"></i> DELETE TASKS</button>
+        </form>
+    </form>
+  </div>
+  </form>
+
+  <ul>
+    <%for(let item of todolist){%>
+      <li id="list_content">
+        <div id="list_content_date">
+          <input type="checkbox" name="checked" id="<%=item._id%>" />
+          <div id="list_content_imp">
+            <p>
+              <%=item.description%>
+            </p>
             <span><i class="fa-solid fa-calendar-days"></i></span>
-            <span class="lineThrough"><%=item.date%></span>
+            <span>
+              <%=item.date%>
+            </span>
           </div>
-          <span id="list_content_category"><%=item.category%></span>
-        </li>
-        <%}%>
-      </ul>
-    </div>
-    <script type="text/javascript" src="/js/script.js"></script>
-  </body>
+        </div>
+        <span id="list_content_category">
+          <%=item.category%>
+        </span>
+      </li>
+      <%}%>
+  </ul>
+  </div>
+  <script type="text/javascript" src="/js/script.js"></script>
+</body>
+
 </html>
