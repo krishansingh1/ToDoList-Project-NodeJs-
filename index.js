@@ -64,7 +64,7 @@ app.get("/delete-list/", function (req, res) {
   //     return;
   //   }
   //   return res.redirect("/");
-  // });
+  // }); 
 });
 
 app.listen(port, (err) => {
