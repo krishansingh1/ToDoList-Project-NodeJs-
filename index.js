@@ -54,19 +54,17 @@ app.post("/create-list", function (req, res) {
 });
 
 app.get("/delete-list/", function (req, res) {
-  let ids = req.params.id;
-  console.log(ids);
-  ids = ids.split("|");
+  // let ids = req.params.id;
+  console.log(req.params);
+  // ids = ids.split("|");
 
-  // console.log(ids);
-
-  List.findByIdandDelete(ids, (err) => {
-    if (err) {
-      console.log("Error in deleting an object from db");
-      return;
-    }
-    return res.redirect("/");
-  });
+  // List.findByIdandDelete(ids, (err) => {
+  //   if (err) {
+  //     console.log("Error in deleting an object from db");
+  //     return;
+  //   }
+  //   return res.redirect("/");
+  // });
 });
 
 app.listen(port, (err) => {
