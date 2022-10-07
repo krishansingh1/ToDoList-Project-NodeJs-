@@ -162,11 +162,12 @@ ul li {
 #list_content {
   display: flex;
   justify-content: space-between;
-  /* margin-top: 1.5rem; */
   margin-left: 1rem;
   border-top: 1px solid gray;
   width: 48rem;
-  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #list_content_imp {
@@ -195,12 +196,12 @@ ul li {
 }
 
 #list_content_category {
+  height: 5%;
   border: 1px solid;
-  padding: 0.5% 3.5%;
+  padding: 0.5rem 2rem;
   border-radius: 0.2rem;
   background-color: yellowgreen;
   color: #ffffff;
-  margin-top: 0.5rem;
 }
 
 input[type="checkbox"]:checked + #list_content_imp {
