@@ -60,8 +60,8 @@
       <ul>
         <%for(let item of todolist){%>
         <li id="list_content">
-          <input type="checkbox" name="checked" id="<%=item._id%>" />
           <div id="list_content_date">
+            <input type="checkbox" name="checked" id="<%=item._id%>" />
             <p class="lineThrough"><%=item.description%></p>
             <span><i class="fa-solid fa-calendar-days"></i></span>
             <span class="lineThrough"><%=item.date%></span>

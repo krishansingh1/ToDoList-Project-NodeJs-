@@ -170,10 +170,10 @@ ul li {
 }
 
 #list_content_date {
-  
+
 }
 
-#list_content_date p:nth-child(1) {
+#list_content_date p:nth-child(2) {
   font-size: 0.8rem;
   font-weight: bold;
 }
@@ -184,7 +184,7 @@ ul li {
   font-size: 0.9rem;
 }
 
-#list_content_date span:nth-child(3) {
+#list_content_date span:nth-child(4) {
   font-size: 0.7rem;
   font-weight: bold;
   color: darkgray;
