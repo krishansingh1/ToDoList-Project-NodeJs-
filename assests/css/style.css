@@ -115,7 +115,8 @@ select:focus {
 
 #list_buttons {
   text-align: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 i {
