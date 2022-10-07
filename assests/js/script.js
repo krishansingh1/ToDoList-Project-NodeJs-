@@ -11,5 +11,5 @@ btn.addEventListener("click", function () {
       str += `|${checks[i].id}`;
     }
   }
-  window.location = `http://localhost:8000/delete-list/${str}`;
+  // window.location = `http://localhost:8000/delete-list/${str}`;
 });
