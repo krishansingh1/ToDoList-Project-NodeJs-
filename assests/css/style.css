@@ -201,9 +201,18 @@ ul li {
   border: 1px solid;
   padding: 0.5rem 2rem;
   border-radius: 0.2rem;
-  background-color: yellowgreen;
   color: #ffffff;
 }
+
+/* .background_color1 {
+  background-color: #ffffff;
+}
+.background_color2 {
+  background-color: purple;
+}
+.background_color3 {
+  background-color: purple;
+} */
 
 input[type="checkbox"]:checked + #list_content_imp {
   text-decoration: line-through;
