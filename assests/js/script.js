@@ -17,6 +17,10 @@ btn.addEventListener("click", function () {
   window.location = `http://localhost:8000/delete-list/?id=${str}`;
 });
 
-if (listOptions.options[0]) {
-  
-}
+console.log(listOptions.options.value);
+
+// for (var option in listOptions.options) {
+//   if (listOptions.options.value == "default") {
+//     color.style.backgroundColor = "#ffffff";
+//   }
+// }
