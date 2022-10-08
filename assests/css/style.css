@@ -196,13 +196,18 @@ ul li {
   top: 2px;
 }
 
-#list_content_category {
+.commonClass {
   height: 5%;
   border: 1px solid;
   padding: 0.5rem 2rem;
   border-radius: 0.2rem;
   color: #ffffff;
-  background-color: blueviolet;
+  background-color: purple;
+}
+
+.commonClass:hover {
+  box-shadow: 0px 0px 5px 2px rgb(14, 6, 6);
+  transform: scale(1.2);
 }
 
 input[type="checkbox"]:checked + #list_content_imp {

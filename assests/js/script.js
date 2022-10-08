@@ -1,6 +1,4 @@
 let btn = document.getElementById("list_delete2");
-let listOptions = document.querySelector("select");
-let color = document.getElementById("list_content_category");
 let str = "";
 
 btn.addEventListener("click", function () {
@@ -16,11 +14,3 @@ btn.addEventListener("click", function () {
 
   window.location = `http://localhost:8000/delete-list/?id=${str}`;
 });
-
-console.log(listOptions.options.value);
-
-// for (var option in listOptions.options) {
-//   if (listOptions.options.value == "default") {
-//     color.style.backgroundColor = "#ffffff";
-//   }
-// }
