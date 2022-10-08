@@ -57,8 +57,6 @@ app.get("/delete-list/", function (req, res) {
   let ids = req.query.id;
   // console.log(req.params);
 
-  // ids = ids.split("|");
-
   List.findByIdAndRemove({ _id: ids }, (err) => {
     if (err) {
       console.log("Error in deleting an object from db");
